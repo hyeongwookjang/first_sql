@@ -1,0 +1,33 @@
+SELECT COUNT(Price)
+FROM Products
+- 카운트
+
+SELECT *
+- 널값도 포함된다.
+
+SELECT COUNT(DISTINCT PRICE)
+FROM Products
+- 중복된 값을 제거한다. 
+
+SELECT SUM(Price)
+FROM Products
+- 함값을 나타낸다
+
+SELECT AVG(Price)
+FROM Products
+- 평균값. 그러나 널값은 분모에 카운팅안한다.
+
+SELECT SUM(PRICE)/COUNT(*)
+FROM Products
+- 평균값 그러나 널값은 0인식, 분모에 카운팅된다.
+
+SELECT MIN(PRICE)
+FROM Products
+- 최소값
+
+SELECT MAX(PRICE)
+FROM Products
+- 최대값
+
+SELECT COUNT(Price), SUM(Price), AVG(Price), MIN(Price), MAX(Price)
+FROM Products

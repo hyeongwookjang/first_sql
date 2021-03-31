@@ -1,0 +1,43 @@
+/*
+SELECT SupplierID, CategoryID, AVG(Price)
+FROM Products
+GROUP BY SupplierID, CategoryID
+*/
+주석처리하고 
+SELECT *
+FROM Products
+로 정보체크하면 좋다.
+- 문장 앞에 --를 그으면 한줄이 주석처리
+
+
+SELECT SupplierID, AVG(Price)
+FROM Products
+GROUP BY SupplierID
+
+
+SELECT SupplierID
+     , CategoryID
+     , AVG(Price)
+FROM Products
+GROUP BY SupplierID, CategoryID
+- SECTECT 띄어쓰기 이렇게 쓰면 가독성이 좋아진다.
+
+SELECT SupplierID
+     , CategoryID
+     , AVG(Price)
+FROM Products
+GROUP BY SupplierID, CategoryID
+ORDER BY AVG(Price) DESC
+HAVING AVG(Price) >= 100
+- ORDER BY로 순서대로 , DESC 붙이면 오름차순
+- HAVING 문으로 완료조건을 걸수있다.
+- WHERE을 넣으면 구조화 이전에 조건이 걸린다.
+
+SELECT SupplierID
+     , CategoryID
+     , AVG(Price) AS avg_price
+FROM Products
+GROUP BY SupplierID, CategoryID
+HAVING avg_price >= 100
+- 이렇게도 조건을 걸 수 있다.
+

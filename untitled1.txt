@@ -1,0 +1,27 @@
+위에 > 버튼 눌러서 실행
+
+실행 url 주소로 들어가고
+
+service mysql restart
+mysql 실행 (start는 구동)
+
+mysql -uroot -p
+관리자로 로그인하기
+
+ssh설정으로 맥이나 우분투, 파워쉘에서 할 수 있다.
+
+SHOW DATABASE
+;
+데이타베이스 열기
+
+mysql
+
+ CREATE DATABASE tutorial;
+데이타베이스에 튜토리얼 만들기
+
+USE tutoral;
+
+- 노션에 잘 정리되어 있다.
+
+PHP + MySQL로 간단한 홈페이지 만들기.
+ssdsd
